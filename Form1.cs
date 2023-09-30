@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+using Login;
 using System.Windows.Forms;
 
 namespace WinForms_components
@@ -14,10 +9,15 @@ namespace WinForms_components
         public Form1()
         {
             InitializeComponent();
+            this.tgButton1.Select();
         }
 
-        private void tgButton1_CheckedChanged(object sender, EventArgs e)
+
+        private void btButton3_Click(object sender, EventArgs e)
         {
+            const string login = "Login";
+            const string password = "Password";
+            _ = new FormLogin(login, password);
 
         }
     }

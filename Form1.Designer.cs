@@ -35,6 +35,7 @@
             this.tgButton2 = new Controls.TgButton();
             this.btButton1 = new Controls.BtButton();
             this.btButton2 = new Controls.BtButton();
+            this.btButton3 = new Controls.BtButton();
             this.SuspendLayout();
             // 
             // txtBox1
@@ -185,12 +186,36 @@
             this.btButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btButton2.UseVisualStyleBackColor = false;
             // 
+            // btButton3
+            // 
+            this.btButton3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btButton3.BackgroundColor = System.Drawing.Color.DeepSkyBlue;
+            this.btButton3.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.btButton3.BorderRadius = 20;
+            this.btButton3.BorderSize = 0;
+            this.btButton3.FlatAppearance.BorderSize = 0;
+            this.btButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btButton3.ForeColor = System.Drawing.Color.White;
+            this.btButton3.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btButton3.IconColor = System.Drawing.Color.Black;
+            this.btButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btButton3.Location = new System.Drawing.Point(242, 369);
+            this.btButton3.Name = "btButton3";
+            this.btButton3.Size = new System.Drawing.Size(150, 40);
+            this.btButton3.TabIndex = 7;
+            this.btButton3.Text = "Open Login";
+            this.btButton3.TextColor = System.Drawing.Color.White;
+            this.btButton3.UseVisualStyleBackColor = false;
+            this.btButton3.Click += new System.EventHandler(this.btButton3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btButton3);
             this.Controls.Add(this.btButton2);
             this.Controls.Add(this.btButton1);
             this.Controls.Add(this.tgButton2);
@@ -214,6 +239,7 @@
         private Controls.TgButton tgButton2;
         private Controls.BtButton btButton1;
         private Controls.BtButton btButton2;
+        private Controls.BtButton btButton3;
     }
 }
 
