@@ -15,5 +15,10 @@ namespace WinForms_components
         {
             InitializeComponent();
         }
+
+        private void tgButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
