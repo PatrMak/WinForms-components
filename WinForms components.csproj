@@ -123,11 +123,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="messageBox\Resource\Aproved.png" />
     <Content Include="messageBox\Resource\Error.png" />
     <Content Include="messageBox\Resource\Warning.png" />
+    <Content Include="Resource\Aproved.png" />
+    <Content Include="Resource\Error.png" />
+    <Content Include="Resource\logo with background.PNG" />
+    <Content Include="Resource\Pivot.PNG" />
+    <Content Include="Resource\Warning.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
