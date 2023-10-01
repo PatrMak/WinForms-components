@@ -3,8 +3,7 @@ using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-
-
+using WinForms_components;
 
 namespace Login
 {
@@ -50,16 +49,12 @@ namespace Login
         }
 
 
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        public extern static void ReleaseCapture();
 
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        public extern static void SendMessage(System.IntPtr hWind, int wMsg, int wParam, int IParam);
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            Native.ReleaseCapture();
+            Native.SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
  
 

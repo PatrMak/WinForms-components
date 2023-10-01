@@ -89,6 +89,7 @@
     <Compile Include="messageBox\MsgBoxButton.cs" />
     <Compile Include="messageBox\MsgBoxResult.cs" />
     <Compile Include="messageBox\MsgBoxResultEnum.cs" />
+    <Compile Include="Native.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="controls\TxtBox.resx">
