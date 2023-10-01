@@ -79,6 +79,16 @@
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="login\LoginResult.cs" />
+    <Compile Include="messageBox\FormMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messageBox\FormMessageBox.Designer.cs">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="messageBox\MsbBoxType.cs" />
+    <Compile Include="messageBox\MsgBoxButton.cs" />
+    <Compile Include="messageBox\MsgBoxResult.cs" />
+    <Compile Include="messageBox\MsgBoxResultEnum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="controls\TxtBox.resx">
@@ -89,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messageBox\FormMessageBox.resx">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -109,6 +122,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="messageBox\Resource\Aproved.png" />
+    <Content Include="messageBox\Resource\Error.png" />
+    <Content Include="messageBox\Resource\Warning.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

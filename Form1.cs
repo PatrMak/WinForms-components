@@ -1,6 +1,7 @@
 ﻿using System;
 using Login;
 using System.Windows.Forms;
+using MsgBox;
 
 namespace WinForms_components
 {
@@ -19,6 +20,11 @@ namespace WinForms_components
             const string password = "Password";
             _ = new FormLogin(login, password);
 
+        }
+
+        private void btMsgBox_Click(object sender, EventArgs e)
+        {
+            _ = new FormMessageBox(MsgBoxType.Information, MsgBoxButton.MsgBoxButtonOKCancel, "Teraz przetestujemy dluzszy tekst czy nie wyjdzie jakis cyrk");
         }
     }
 }

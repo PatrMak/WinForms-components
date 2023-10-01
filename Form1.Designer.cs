@@ -36,6 +36,7 @@
             this.btButton1 = new Controls.BtButton();
             this.btButton2 = new Controls.BtButton();
             this.btButton3 = new Controls.BtButton();
+            this.btMsgBox = new Controls.BtButton();
             this.SuspendLayout();
             // 
             // txtBox1
@@ -209,12 +210,36 @@
             this.btButton3.UseVisualStyleBackColor = false;
             this.btButton3.Click += new System.EventHandler(this.btButton3_Click);
             // 
+            // btMsgBox
+            // 
+            this.btMsgBox.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btMsgBox.BackgroundColor = System.Drawing.Color.DeepSkyBlue;
+            this.btMsgBox.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.btMsgBox.BorderRadius = 20;
+            this.btMsgBox.BorderSize = 0;
+            this.btMsgBox.FlatAppearance.BorderSize = 0;
+            this.btMsgBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMsgBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btMsgBox.ForeColor = System.Drawing.Color.White;
+            this.btMsgBox.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btMsgBox.IconColor = System.Drawing.Color.Black;
+            this.btMsgBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btMsgBox.Location = new System.Drawing.Point(427, 243);
+            this.btMsgBox.Name = "btMsgBox";
+            this.btMsgBox.Size = new System.Drawing.Size(150, 40);
+            this.btMsgBox.TabIndex = 8;
+            this.btMsgBox.Text = "Open Msg Box";
+            this.btMsgBox.TextColor = System.Drawing.Color.White;
+            this.btMsgBox.UseVisualStyleBackColor = false;
+            this.btMsgBox.Click += new System.EventHandler(this.btMsgBox_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btMsgBox);
             this.Controls.Add(this.btButton3);
             this.Controls.Add(this.btButton2);
             this.Controls.Add(this.btButton1);
@@ -240,6 +265,7 @@
         private Controls.BtButton btButton1;
         private Controls.BtButton btButton2;
         private Controls.BtButton btButton3;
+        private Controls.BtButton btMsgBox;
     }
 }
 
